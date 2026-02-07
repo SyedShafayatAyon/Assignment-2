@@ -25,10 +25,11 @@ body{
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+}
+
+.btn img{
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 .heading-and-paragraph{
@@ -89,7 +90,7 @@ body{
 }
 
 .hero-container{
-    margin: 101px;
+    margin: 101px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,14 +107,17 @@ body{
     transition: transform 2s;
 }
 
-#hero-circle img,#microphone img{
+#hero-circle img{
+    width: 100%;
+}
+#microphone img{
     width: 100%;
 }
 
 .hero-container-image #microphone{
     max-width: 7.31rem;
     position: absolute;
-    top: 40px;
+    top: 2.5rem;
     left: 7rem;
     z-index: 5;
     transition: transform 2s;
@@ -146,8 +150,30 @@ body{
 
 .hero-container .heading-and-paragraph p{
     margin-top: 8px;
+    margin-bottom: 24px;
     font-weight: 400;
     font-size: 1rem;
+}
+
+.hero-container .hero-buttons{
+    display: flex;
+    gap: 8px;
+}
+
+.hero-buttons #subscribe-button{
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    border-radius: 1000px;
+    padding: 12.5px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#subscribe-button img{
+    vertical-align: middle;
+    margin-right: 8px;
 }
 /* for small device */
 @media screen and (max-width:576px) {
@@ -160,5 +186,21 @@ body{
         align-items: center;
         background-color: #1A0B2E;
         padding: 30px;
+        border-bottom: 1px solid #412567;
+    }
+    .hero{
+        
+    }
+    .hero-container-image #hero-circle{
+        top: -1rem;
+    }
+    .hero-container-image #microphone{
+        top: 3.75rem;
+        left: 7rem;
+    }
+
+    .hero-container-image #new-notification{
+        top: -5px;
+        left: 240px;
     }
 }
