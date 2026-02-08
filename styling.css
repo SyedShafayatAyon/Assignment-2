@@ -70,7 +70,7 @@ body{
 }
 
 #wave-logo{
-    background:linear-gradient(to top,#F7E93F 0%,#FB09B4 51%,#9100F8 100%) ;
+    background:linear-gradient(to top right,#F7E93F 0%,#FB09B4 51%,#9100F8 100%) ;
     background-clip: text;
     color: transparent;
 }
@@ -209,10 +209,11 @@ body{
 
 .about-card-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 80px;
     padding-top: 80px;
     border-top: 1px solid #412567;
+    margin-bottom: 120px;
 }
 
 .about-card-container .about-card{
@@ -231,6 +232,75 @@ body{
     font-size: 1rem;
     font-weight: 400;
 }
+.why-choose-section{
+    background-color: #230E3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why-choose-section h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 120px 0 40px;
+}
+
+.Premium-Audio{
+    grid-area: Premium-Audio;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 107px 40px;
+}
+
+.Mobile-Friendly{
+    grid-area: Mobile-Friendly;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+
+.Global-Community{
+    grid-area: Global-Community;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+
+.Exclusive-Interviews{
+    grid-area: Exclusive-Interviews;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+
+.Rich-Resources{
+    grid-area: Rich-Resources;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+
+
+.why-choose-section .why-choose-container{
+    max-width: 75rem;
+    margin-bottom: 120px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "Premium-Audio Mobile-Friendly Mobile-Friendly Mobile-Friendly Mobile-Friendly"
+    "Premium-Audio Global-Community Global-Community Global-Community Global-Community"
+    "Exclusive-Interviews Exclusive-Interviews Exclusive-Interviews Exclusive-Interviews Rich-Resources"
+    "Exclusive-Interviews Exclusive-Interviews Exclusive-Interviews Exclusive-Interviews Rich-Resources";
+}
+
+.why-choose-container>*{
+    border-radius: 40px;
+    color: #FFFFFF;
+}
+
+.why-choose-container h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
 /* for small device */
 @media screen and (max-width:576px) {
     .nav-bar-desktop{
@@ -263,6 +333,14 @@ body{
     .about-card-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        /* grid-template-rows: repeat(2,1fr); */
+    }
+
+    .why-choose-section .why-choose-container{
+        grid-template-areas:
+            "Premium-Audio" 
+            "Mobile-Friendly"
+            "Global-Community"
+            "Exclusive-Interviews"
+            "Rich-Resources";
     }
 }
