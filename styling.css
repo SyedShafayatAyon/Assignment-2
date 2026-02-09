@@ -37,6 +37,28 @@ body{
     color: #FFFFFF;
     text-align: center;
 }
+
+.heading{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 120px 0 40px;
+}
+
+.card-heading-and-paragraph{
+    color: #FFFFFF;
+} 
+
+.card-heading-and-paragraph h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-heading-and-paragraph p{
+    font-size: 1rem;
+    font-weight: 400;
+}
 /* sharing style */
 
 .nav-bar-desktop{
@@ -241,9 +263,6 @@ body{
 }
 
 .why-choose-section h1{
-    color: #FFFFFF;
-    font-size: 3rem;
-    font-weight: 700;
     margin: 120px 0 40px;
 }
 
@@ -281,6 +300,7 @@ body{
 .why-choose-section .why-choose-container{
     max-width: 75rem;
     margin-bottom: 120px;
+    padding: 0 20px;
     display: grid;
     gap: 30px;
     grid-template-areas: 
@@ -296,9 +316,55 @@ body{
 }
 
 .why-choose-container h4{
-    font-size: 1.5rem;
-    font-weight: 700;
     margin: 16px 0;
+}
+
+.Featured-Episodes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A0B2E;
+    flex-direction: column;
+}
+
+.Featured-Episodes-container{
+    max-width: 75rem;
+}
+
+.Featured-Episodes-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 120px;
+}
+
+.Featured-Episodes-card{
+    background-color: #230E3D;
+    border-radius: 24px;
+    max-width: 23.75rem;
+}
+
+.Featured-Episodes-card h4{
+    margin: 24px 24px 12px;
+}
+
+.Featured-Episodes-card p{
+    margin: 24px 24px 12px;
+}
+
+.Featured-Episodes-card iframe{
+    max-width: 23.75rem;
+    border-radius: 24px 24px 0 0;
+}
+
+.Featured-Episodes-card #time{
+    color: #00FF88;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    gap: 6px;
 }
 
 /* for small device */
@@ -336,11 +402,26 @@ body{
     }
 
     .why-choose-section .why-choose-container{
+        
         grid-template-areas:
             "Premium-Audio" 
             "Mobile-Friendly"
             "Global-Community"
             "Exclusive-Interviews"
             "Rich-Resources";
+    }
+
+    .Featured-Episodes-card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 16px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .Featured-Episodes-card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
