@@ -436,8 +436,8 @@ section{
 }
 
 .footer-container{
-    margin: 120px;
-    max-width: 34rem;
+    margin: 120px 0;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -529,6 +529,11 @@ section{
 
     .host-description p{
         text-align: center;
+    }
+    .platform-info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
     }
 }
 
