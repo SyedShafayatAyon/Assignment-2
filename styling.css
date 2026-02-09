@@ -11,6 +11,10 @@ body{
 .nav-bar-mobile{
     display: none;
 }
+
+section{
+    padding: 0 20px;
+}
 /* sharing style */
 .color-FFFFFF{
     color: #FFFFFF;
@@ -89,12 +93,6 @@ body{
 
 .nav-bar-desktop h1 .tech-logo{
     color: #FFFFFF;
-}
-
-#wave-logo{
-    background:linear-gradient(to top right,#F7E93F 0%,#FB09B4 51%,#9100F8 100%) ;
-    background-clip: text;
-    color: transparent;
 }
 
 .nav-bar-desktop h1{
@@ -335,6 +333,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     margin-bottom: 120px;
 }
@@ -367,6 +366,59 @@ body{
     gap: 6px;
 }
 
+.meet-host-section{
+    background-color: #1A0B2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.meet-host-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 75rem;
+}
+
+.host{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 48.5px 40px;
+    border-radius: 40px;
+}
+
+.host-description{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.host-description h4{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.host-description p{
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.host-social-links{
+    display: flex;
+    gap: 8px;
+}
+
+.link{
+    max-width: 2.5rem;
+    border: 2px solid #533C72;
+    border-radius: 50%;
+}
 /* for small device */
 @media screen and (max-width:576px) {
     .nav-bar-desktop{
@@ -380,9 +432,7 @@ body{
         padding: 30px;
         border-bottom: 1px solid #412567;
     }
-    .hero{
-        
-    }
+    
     .hero-container-image #hero-circle{
         top: -1rem;
     }
@@ -412,10 +462,20 @@ body{
     }
 
     .Featured-Episodes-card-container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 16px;
-        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .host{
+        flex-direction: column;
+    }
+
+    .host-description{
+        align-items: center;
+    }
+
+    .host-description p{
+        text-align: center;
     }
 }
 
