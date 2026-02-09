@@ -380,6 +380,7 @@ section{
     justify-content: center;
     align-items: center;
     max-width: 75rem;
+    margin-bottom: 120px;
 }
 
 .host{
@@ -415,9 +416,61 @@ section{
 }
 
 .link{
-    max-width: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
     border: 2px solid #533C72;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    background: url("assets/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container{
+    margin: 120px;
+    max-width: 34rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footer-container .TechWave{
+    max-width: 25.63rem;
+}
+
+.footer-container img{
+    width: 100%;
+}
+
+.platform-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.platform-info img{
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+.platform-link{
+    display: flex;
+    gap: 8px;
+}
+
+.footer-container p{
+    color: #FFFFFF;
 }
 /* for small device */
 @media screen and (max-width:576px) {
