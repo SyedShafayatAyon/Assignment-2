@@ -497,6 +497,7 @@ section{
         top: 3.75rem;
         left: 7rem;
     }
+    
 
     .hero-container-image #new-notification{
         top: -5px;
@@ -537,6 +538,7 @@ section{
 
     .platform-info{
         gap: 16px;
+        max-width: 15.93rem;
     }
 
     .footer-container .TechWave{
